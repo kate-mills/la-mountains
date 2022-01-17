@@ -1,0 +1,26 @@
+.stickynav__topbar{
+  width: 100vw;
+  display:flex;
+  align-items:center;
+  height: 74px;
+}
+.stickynav__topbar img{
+  margin-left: 21.375vw;
+  width: 164px;
+  height: 45px;
+}
+
+.stickynav__topbar li:hover{
+  pointer: cursor;
+}
+.stickynav__topbar li a{
+  color: var(--blueDark);
+}
+
+@media (max-width:576px){
+  .stickynav__topbar{
+    min-height:74px;
+    height: auto;
+  }
+}
+

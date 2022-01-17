@@ -1,0 +1,29 @@
+.hero__background{
+  align-items: flex-start;
+  background-position: top !important;
+  background-size: cover;
+  min-height: 825px;
+  /*height: 54.240631vh;/*825px/1521px*/
+}
+.hero__topbar{
+  width: 100vw;
+  display:flex;
+  align-items: center !important;
+  justify-content: space-between;
+}
+.hero__topbar img{
+  margin-left: 21.375vw;
+  width: 43px;
+  height: 43px;
+}
+.hero__topbar li a{
+  color: #fefeff;
+}
+.hero__topbar li:hover{
+  pointer: cursor;
+}
+@media (max-width:576px){
+  .hero__topbar{
+  }
+}
+
