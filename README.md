@@ -8,8 +8,7 @@ Check it out: https://losangeles-mountains.netlify.app
 ```shell 
     # Please use Node Version v14.18.1
 
-    npm install # install dependencies
+    npm install     # install dependencies
     npm run develop # View - http://localhost:8000/
-    npm run build   # build production version
-    npm run serve   # View -  http://localhost:9000/
+    npm run serve   # View -  http://localhost:9000/ 
 ```

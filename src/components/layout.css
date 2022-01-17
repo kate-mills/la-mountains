@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;1,900&family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,900&family=Oswald:wght@700&display=swap');
 
 :root{
   --lato: 'Lato', sans-serif;
-  --bebas: 'Bebas Neue', cursive;
   --oswald: 'Oswald', sans-serif;
   --whiteText: #dfeaf5;
   --blueLight: #414f6b; 
@@ -22,10 +21,9 @@ body{
 
 h1,h2,h3,h4,h5,h6{
   font-family: var(--oswald);
-  font-weight: 700;
+  font-weight: 700 !important;
 }
-nav a.nav-link,
-button.btn-link{
+nav a.nav-link{
   font-family: var(--lato);
   font-size: 12px;
   font-style: italic;
@@ -37,9 +35,6 @@ button.btn-link{
   text-underline-offset: 3px;
 }
 
-button.btn-link{
-  
-}
 
 /*HERO*/
 .hero-bg{
@@ -138,7 +133,7 @@ li a:hover{
 	cursor:pointer;/* imp*/
   display:inline-block;/* imp*/
   font-family: var(--oswald);
-  font-weight: 700;
+  font-weight: 700 !important;
   height: 40px;
 	text-align:center;/* imp*/
 	width:140px;/* imp*/
@@ -168,14 +163,17 @@ li a:hover{
   width: 100%;
 }
 
-.btn.btn-link.collapsed{
-	background-color: var(--activeTab)!important;
+button.btn.btn-link{
   color: var(--blueLight) !important;
+  font-family: var(--oswald) !important;
+  font-weight: 700 !important;
+  font-size: 1.25rem !important; /* 20px */
+  line-height: auto !important;
+  text-transform: uppercase !important;
+  text-decoration: underline !important;
+  text-underline-offset: 2px !important;
 }
-.btn.btn-link.collapsed{
-  background-color: var(--blueLight) !important;
-  color: var(--activeTab) !important;
-}
+
 
 /* END SECTION 2 ACCORDION & TAB STYLES */
 /* END SECTION 2 */
