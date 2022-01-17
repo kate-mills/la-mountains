@@ -181,4 +181,20 @@ li a:hover{
 }
 /* END FOOTER */
 @media (max-width:767.98px){}
-@media (min-width: 576px){}
+
+@media (min-width: 576px){
+  #desktop-tabs{
+    display:block !important;
+  }
+  #mobile-accordion{
+    display:none !important;
+  }
+}
+@media (max-width: 576px){
+  #desktop-tabs{
+    display:none !important;
+  }
+  #mobile-accordion{
+    display:block !important;
+  }
+}

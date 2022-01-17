@@ -1,6 +1,7 @@
 import React from "react"
 import tabs from 'tabs'
 import BackgroundImage from './TabBackgroundImage'
+import Accordion from './Accordion'
 
 const Navbar = ({tab1, tab2})=>{
   React.useEffect(()=>{
@@ -8,7 +9,9 @@ const Navbar = ({tab1, tab2})=>{
     tabs(container);
   },[])
   return (
-    <div className="tab-container">
+    <React.Fragment>
+
+    <div id="desktop-tabs" className="tab-container">
       <div className="tabs">
         <button className="tab active">MOUNTAIN 1</button>
         <button className="tab">MOUNTAIN 2</button>
@@ -22,6 +25,9 @@ const Navbar = ({tab1, tab2})=>{
       </div>
     </div>
   </div>
+  <Accordion img1={tab1} img2={tab2}/>
+</React.Fragment>
+
   )
 }
 export default Navbar
