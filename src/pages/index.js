@@ -26,6 +26,8 @@ const IndexPage = ({ data }) => {
         text={data.sectionTwo.childImageSharp.fluid}
         tab1={data.climbOne.childImageSharp.fluid}
         tab2={data.climbTwo.childImageSharp.fluid}
+        acc1={data.accordionOne.childImageSharp.fluid}
+        acc2={data.accordionTwo.childImageSharp.fluid}
       />
     </Layout>
   )
@@ -77,6 +79,21 @@ export const query = graphql`
         }
       }
     }
+    accordionOne: file(relativePath: { eq: "Accordion-1.jpg" }) {
+      childImageSharp {
+        fluid(toFormat: JPG) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+    accordionTwo: file(relativePath: { eq: "Accordion-2.jpg" }) {
+      childImageSharp {
+        fluid(toFormat: JPG) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+
   }
 `
 export default IndexPage

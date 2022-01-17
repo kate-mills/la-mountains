@@ -3,7 +3,7 @@ import tabs from 'tabs'
 import BackgroundImage from './TabBackgroundImage'
 import Accordion from './Accordion'
 
-const Navbar = ({tab1, tab2})=>{
+const Navbar = ({tab1, tab2, acc1, acc2})=>{
   React.useEffect(()=>{
     var container=document.querySelector('.tab-container')
     tabs(container);
@@ -25,7 +25,7 @@ const Navbar = ({tab1, tab2})=>{
       </div>
     </div>
   </div>
-  <Accordion img1={tab1} img2={tab2}/>
+  <Accordion img1={acc1} img2={acc2}/>
 </React.Fragment>
 
   )

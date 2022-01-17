@@ -7,7 +7,7 @@ const Accordion = ({img1, img2})=>{
   <div className="card">
     <div className="card-header" id="headingOne">
       <h2 className="mb-0">
-        <button className="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" onClick={((e)=>console.log(e.target.className))}>
+        <button className="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
           Mountain 1
         </button>
       </h2>
