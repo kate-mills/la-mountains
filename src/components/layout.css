@@ -24,7 +24,8 @@ h1,h2,h3,h4,h5,h6{
   font-family: var(--oswald);
   font-weight: 700;
 }
-nav a.nav-link{
+nav a.nav-link,
+button.btn-link{
   font-family: var(--lato);
   font-size: 12px;
   font-style: italic;
@@ -34,6 +35,10 @@ nav a.nav-link{
   margin-left: 2rem;
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+button.btn-link{
+  
 }
 
 /*HERO*/
@@ -113,7 +118,7 @@ li a:hover{
   background-size:contain;
   height: 124px;
 }
-/* SECTION 2 TAB STYLES */
+/* SECTION 2 TAB & ACCORDION STYLES */
 .tab-container{
   background: var(--blueLight);
   height: 586px;
@@ -125,10 +130,11 @@ li a:hover{
   line-height: 30px; /* imp*/
   width: 100vw;
 }
+.accordion .card .card-header .btn-link,
 .tabs .tab {
   background-color: var(--blueLight);
   border:none;
-  color: var(--activeTab);
+  color: var(--activeTab) !important;
 	cursor:pointer;/* imp*/
   display:inline-block;/* imp*/
   font-family: var(--oswald);
@@ -137,9 +143,10 @@ li a:hover{
 	text-align:center;/* imp*/
 	width:140px;/* imp*/
 }
+
 .tabs .active {
 	background-color: var(--activeTab);/* imp*/
-  color: var(--blueLight);
+  color: var(--blueLight) !important;
   text-decoration: underline;
   text-underline-offset: 2px;
 }
@@ -155,7 +162,22 @@ li a:hover{
   height: 546px;
   width: 100%;
 }
-/* END SECTION 2 TAB STYLES */
+/* ACCORDION */
+.accordion .card{
+  background: var(--blueLight);
+  width: 100%;
+}
+
+.btn.btn-link.collapsed{
+	background-color: var(--activeTab)!important;
+  color: var(--blueLight) !important;
+}
+.btn.btn-link.collapsed{
+  background-color: var(--blueLight) !important;
+  color: var(--activeTab) !important;
+}
+
+/* END SECTION 2 ACCORDION & TAB STYLES */
 /* END SECTION 2 */
 
 
